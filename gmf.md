@@ -2,12 +2,14 @@
 
 The Goals, Methods, and Failures (GMF) taxonomy is a failure 
 cause analysis taxonomy interrelating the goals of the system 
-deployment, the system's methods, and their likely failings. 
-Details on the process are available in the recent work published 
-for [SafeAI paper](https://arxiv.org/abs/2211.07280).
+deployment, the system's methods, and their likely technical failings. 
 
-### Motivation and Structure
-The taxonomy was developed to address the following use cases and questions:
+Details on the taxonomy description, proposed annotation process
+and future work are available in our [SafeAI 2023 workshop paper](https://ceur-ws.org/Vol-3381/17.pdf), while
+a short description is provided below. 
+
+### GMF Motivation and Structure
+The GMF taxonomy was developed to address the following use cases and questions:
 
 - How can owners and developers of AI systems discover technical failure causes
 of **harm related to the system task**, that the AI is deployed to perform in the real world?
