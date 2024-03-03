@@ -6,57 +6,58 @@ deployment, the system's methods, and their likely failings.
 Details on the process are available in the recent work published 
 for [SafeAI paper](https://arxiv.org/abs/2211.07280).
 
-#### Motivation
+### Motivation and Structure
 The taxonomy was developed to address the following use cases and questions:
 
-- How can owners and developers of AI systems discover harm-related failures
-causes related to the real-world task the system is deployed to perform?
+- How can owners and developers of AI systems discover technical failure causes
+of **harm related to the system task**, that the AI is deployed to perform in the real world?
 
-- How can AI developers and engineers discover technical causal factors of
- real-world harm, that may be linked to implementation methods, model architectures
- and techniques employed in their system, such that they may be corrected or avoided?
+- How can AI developers and engineers discover **technical causal factors of harm**
+that may be linked to implementation methods, model architectures and techniques
+employed in their system, such that they may be corrected or avoided?
 
-- How can we leverage the body of expert technical knowledge from the Machine
+- How can we **leverage the body of expert technical knowledge** from the Machine
  Learning, AI Safety, Engineering, etc. community, to produce useful, high-quality
-  annotations on publicly available AI incident reports?
+  annotations on **publicly available AI incident reports**?
 
-- How can we generate annotations grounded to real-world data for high-level accuracy,
+- How can we generate annotations **grounded to real-world data** for high-level accuracy,
 verifiability and potential for further research and development?
 
-#### Structure
+<!-- #### Structure -->
 The taxonomy is designed to address the questions above via a structure of three interrelated
  ontologies, each describing the AI system involved in a reported incident under a different lens.
  These ontologies include system views focused on:
 
-- AI system goals, which characterize high-level goals, objectives and tasks of AI systems (e.g. `Face Recognition`)
-- AI methods and technologies, which describe the AI implementation methodologies (e.g. `Transformer`)
-- AI failure causes, containing technical reasons related to systemic failure that results in harm (e.g. `Concept Drift`)
+- **AI System Goals**, which characterize high-level goals, objectives and tasks of AI systems (e.g. `Face Recognition`)
+- **AI Methods and Technologies**, which describe the AI implementation methodologies (e.g. `Transformer`)
+- **AI failure causes**, containing technical reasons for systemic failure that results in the observed harm (e.g. `Concept Drift`)
 
 Given that AI incident reports in news media often lack technical details, GMF annotations are paired with:
 
-- Confidence modifiers (`known` and `potential`), corresponding to how certain the annotator is,
+- **Confidence modifiers** (`known` and `potential`), corresponding to how certain the annotator is,
 when applying a label to the incident
-- Text snippets from reports describing the incident, which ground the label to text supporting the classification
-- Free comments, where the annotator may provide their rationale, evidence, sources, etc. for the assigned label
+- **Text samples** from reports describing the incident, which ground each assigned label to text passages that support the classification
+- **Free comments**, where the annotator may provide their rationale, evidence, sources, etc. for the assigned label
 
+## How do I annotate incidents with GMF?
 
-#### Incident annotation with GMF
+The structure of GMF, paired with the AIID interfaces for [incident discovery](https://incidentdatabase.ai/apps/discover) and annotation editing [^1]<!-- and risk checklisting [^2] -->, exposes the user to multiple sources of useful data for efficient and informed incident annotation. 
 
-The structure of GMF, paired with the AIID interfaces for incident discovery, annotation editing and risk
-checklisting, exposes the user to multiple sources of useful information for efficient incident annotation,
-other than the contents of its reports.
+For example, the user can retrieve similar incidents annotated by the community with respect to
+existing classifications, e.g. regarding the goal of the AI system. Retrieved incidents expose past annotations and auxiliary metadata, such as exemplar text snippets, annotator rationale and
+related sourced materials of potential relevance. 
 
-For example, the user can retrieve similar incidents annotated by the community with respect to existing
-classifications, e.g. of the system goal.
-This exposes past annotations and metadata (exemplar text snippets, annotator rationale and related materials)
-of potential relevance, informing the selection of additional fitting labels (e.g. methods and technologies,
-as well as technical failure causes) for the incident at hand.
+These supplemental data may counteract the lack of AI system implementation details in incident
+ reports regarding methods, technologies and technical failure causes, allowing the application of
+  fitting labels for the incident at hand.
 
-A visualization of this information flow in the annotation process is illustrated  below:
+[^1]: Found in the page for each incident, e.g. [AIID incident #72](https://incidentdatabase.ai/cite/72/)
+
+A visualization of this flow of information for decision making in the annotation process is illustrated  below:
 
 ![](images/structure.png)
 
-Additionally, an indicative annotation process for the [AIID incident #72](https://incidentdatabase.ai/cite/72/) is illustrated below.
+Additionally, an indicative application of this annotation process for the real-world [AIID incident #72](https://incidentdatabase.ai/cite/72/) is illustrated below.
 
 ![](images/annotation.png)
 
