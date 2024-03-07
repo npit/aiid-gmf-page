@@ -2,7 +2,7 @@
 
 The Goals, Methods, and Failures (GMF) taxonomy is a failure 
 cause analysis taxonomy interrelating the goals of the system 
-deployment, the system's methods, and their likely technical failings. 
+deployment, the system's methods, and their likely technical failings. The taxonomy structure encourages considering what is known or observed versus what is potential or likely, guiding how to apply and interpret expert technical knowledge about failures. Further, the proposed annotation workflow features grounding labels to data and external evidence, enhancing verifiability, collaborative annotation and crowdsourcing. These design decisions render GMF a valuable tool for annotating noisy, low-information documents like public AI incident reports.
 
 Details on the taxonomy description, proposed annotation process
 and future work are available in our [SafeAI 2023 workshop paper](https://ceur-ws.org/Vol-3381/17.pdf), while
@@ -11,18 +11,18 @@ a short description is provided below.
 ### GMF Motivation and Structure
 The GMF taxonomy was developed to address the following use cases and questions:
 
-- How can owners and developers of AI systems discover technical failure causes
+- **Linking harms to system goals**: How can developers and deployers of AI systems discover technical failure causes
 of **harm related to the system task**, that the AI is deployed to perform in the real world?
 
-- How can AI developers and engineers discover **technical causal factors of harm**
+- **Connecting technical approaches to failure causes**: How can AI developers and auditors discover **technical causal factors of harm**
 that may be linked to implementation methods, model architectures and techniques
 employed in their system, such that they may be corrected or avoided?
 
-- How can we **leverage the body of expert technical knowledge** from the Machine
+- **Harness interdisciplinary technical expertise:**: How can we **leverage the body of expert technical knowledge** from the Machine
  Learning, AI Safety, Engineering, etc. community, to produce useful, high-quality
-  annotations on **publicly available AI incident reports**?
+  annotations on **publicly available AI incident reports** that may lack details and technical information?
 
-- How can we generate annotations **grounded to real-world data** for high-level accuracy,
+- **Data-driven, grounded labelling**: How can we generate annotations **grounded to real-world data** for high-level accuracy,
 verifiability and potential for further research and development?
 
 <!-- #### Structure -->
