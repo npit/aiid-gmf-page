@@ -57,7 +57,7 @@ These supplemental data may counteract the lack of AI system implementation deta
 
 A visualization of this flow of information for decision making in the annotation process is illustrated  below:
 
-![](images/structure.png)
+![](images/structure_simplified.png)
 
 Additionally, an indicative application of this annotation process for the real-world [AIID incident #72](https://incidentdatabase.ai/cite/72/) is illustrated below.
 
